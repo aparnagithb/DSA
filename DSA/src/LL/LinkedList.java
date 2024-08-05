@@ -9,6 +9,25 @@ class Node{
 }
 public class LinkedList {
 	Node head; 
+	public static boolean isempty(LinkedList l) {
+		if(l.head==null) {
+			return true  ;
+		}
+		return false;
+	}
+	public static int size(LinkedList list) 
+    { 
+        Node currNode = list.head; 
+    
+    int n =0 ;
+        // Traverse through the LinkedList 
+        while (currNode != null) { 
+    
+            currNode = currNode.next; 
+            n+=1;
+            
+        } 
+return n ;    }
 	public static LinkedList insert(LinkedList l ,int val) {
 		Node newnode=new Node(val) ;
 		if(l.head==null) {
@@ -136,6 +155,7 @@ public static LinkedList deletemiddle(LinkedList l) {
 		printList(ll);
 		ll=deletemiddle(ll); 
 		printList(ll);
+		System.out.print(size(ll));
 
 
 		
