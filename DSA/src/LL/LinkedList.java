@@ -2,8 +2,8 @@ package LL;
 class Node{
 	int val ; 
 	Node next ;
-	public Node(int dataa) {
-		val=dataa; 
+	public Node(int dataaa) {
+		val=dataaa; 
 		next=null;
 	}
 }
